@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Image } from "antd";
+import {CaretRightOutlined, CaretLeftOutlined} from "@ant-design/icons"
 import car from "../kenney_racing-pack/PNG/Cars/car_black_5.png";
 import street from "../kenney_racing-pack/PNG/Tiles/Asphalt road/road_asphalt02.png";
 import "./animation.css"
@@ -19,7 +20,7 @@ export default function Game() {
 
     return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '700px', width: '100%' }}>
-      <div style={{position: 'relative', height: '40%', width: '1100px', margin: '10px', display: 'flex', alignItems: 'center' }}>
+      <div style={{position: 'relative', height: '400px', width: '1024px', margin: '10px', display: 'flex', alignItems: 'center', backgroundColor: '#37AA50', borderRadius: '8px'}}>
         <div style={{position: 'absolute', zIndex: 1, left: 0}}>
             {renderScenario()}
         </div>
@@ -31,10 +32,16 @@ export default function Game() {
       </div>
       {(isMoving==false)
       ?
-        <Button onClick={()=>{setIsMoving(true)}}>Correr</Button>
+        <Button onClick={()=>{setIsMoving(true)}} icon={<CaretRightOutlined/>}></Button>
       :
-        <Button onClick={()=>{setIsMoving(false)}}>Retornar</Button>
+        <Button onClick={()=>{setIsMoving(false)}} icon={<CaretLeftOutlined/>}></Button>
       }
+      <div>
+
+      </div>
+      <div>
+
+      </div>
     </div>
   );
 }
