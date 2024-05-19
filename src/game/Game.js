@@ -7,7 +7,7 @@ import "./animation.css"
 
 export default function Game() {
     const [isMoving, setIsMoving] = useState(false)
-    const [time, setTime] = useState('3')
+    const [time, setTime] = useState('5')
 
     const renderScenario = ()=>{
         let streetNum = 8
@@ -32,9 +32,9 @@ export default function Game() {
       </div>
       {(isMoving==false)
       ?
-        <Button onClick={()=>{setIsMoving(true)}} icon={<CaretRightOutlined/>}></Button>
+        <Button shape="circle" onClick={()=>{setIsMoving(true)}} icon={<CaretRightOutlined/>}></Button>
       :
-        <Button onClick={()=>{setIsMoving(false)}} icon={<CaretLeftOutlined/>}></Button>
+        <Button shape="circle" onClick={()=>{setIsMoving(false)}} icon={<CaretLeftOutlined/>}></Button>
       }
       <div>
 

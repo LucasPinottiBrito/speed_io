@@ -1,10 +1,10 @@
 .car{
     position: absolute; 
     z-index: 10;
-    left: 50;
+    left: 25px;
     rotate: 90deg;
 }
 
 .car.moving{
-    transform: translateY(-930px);
+    transform: translateY(-905px);
 }
