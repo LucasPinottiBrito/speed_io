@@ -2,7 +2,9 @@
     border-radius: 10px;
     background: #ffffff;
     height: 45px;
-    width: 367px ;
+    width: 367px;
+    max-height: 45px;
+    max-width: 367px ;
     border: 2px #000000 solid;
     color: #6c757d;
   }

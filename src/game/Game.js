@@ -40,8 +40,8 @@ export default function Game() {
         <Button shape="circle" onClick={()=>{setIsMoving(false)}} icon={<CaretLeftOutlined/>}></Button>
       }
       <div>
-      <SpeedInput/>
-      <SpeedButton/>
+        <SpeedInput/>
+        <SpeedButton/>
       </div>
       <div>
       </div>

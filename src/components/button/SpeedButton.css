@@ -1,11 +1,14 @@
-.speediobutton {
-    background: #4a4e69;
+.speediobutton{
+    background-color: #4a4e69;
     border: 2px #000000 solid;
     border-radius: 10px;
     height: 45px;
     width: 134px;
+    max-height: 45px;
+    max-width: 134px;
+    box-sizing: content-box;
     cursor: pointer;
-    :hover{
-    opacity: 0.5;
   }
+  .speediobutton:hover{
+    opacity: 0.5;
   }
