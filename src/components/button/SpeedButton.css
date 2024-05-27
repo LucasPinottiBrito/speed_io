@@ -1,0 +1,11 @@
+.speediobutton {
+    background: #4a4e69;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+    height: 45px;
+    width: 134px;
+    cursor: pointer;
+    :hover{
+    opacity: 0.5;
+  }
+  }

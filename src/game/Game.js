@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Button, Image, Input } from "antd";
+import { Button, Image} from "antd";
 import {CaretRightOutlined, CaretLeftOutlined} from "@ant-design/icons"
 import car from "../kenney_racing-pack/PNG/Cars/car_black_5.png";
 import street from "../kenney_racing-pack/PNG/Tiles/Asphalt road/road_asphalt02.png";
 import "./animation.css"
+import SpeedButton from "../components/button/SpeedButton";
+import SpeedInput from "../components/input/SpeedInput";
+
 
 export default function Game() {
     const [isMoving, setIsMoving] = useState(false)
@@ -37,8 +40,8 @@ export default function Game() {
         <Button shape="circle" onClick={()=>{setIsMoving(false)}} icon={<CaretLeftOutlined/>}></Button>
       }
       <div>
-      <input class="ant-input ant-input-outlined css-var-r2 ant-input-css-var ant-input-compact-item ant-input-compact-first-item" type="text" placeholder="                Guess the speed"></input>
-      <button type="button" class="ant-btn css-var-r2 ant-btn-primary ant-btn-compact-item ant-btn-compact-last-item"><span>Guess!</span></button>
+      <SpeedInput/>
+      <SpeedButton/>
       </div>
       <div>
       </div>
